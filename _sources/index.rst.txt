@@ -3,18 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to mypo-book's documentation!
-=====================================
+コンテンツ
+==========
+This tutorial will be helpful for understanding the usage of this module.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+
+   chapter/00_introduction
+   chapter/01_first-simulation
+   chapter/02_spending-money
+   chapter/03_second-simulation
+   chapter/04_initial-money
+   chapter/05_distribution
+   chapter/0f_notes
 
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
