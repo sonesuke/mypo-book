@@ -1,3 +1,8 @@
-FROM sphinxdoc/sphinx:3.5.4
+FROM python:3.7.10-slim-buster
 
-RUN pip install pydata-sphinx-theme
+RUN apt update && \
+    apt install -y make && \
+    apt clean && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN pip install sphinx pydata-sphinx-theme
