@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  book:
+    image: sphinxdoc/sphinx:3.5.4
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: ["bash", "/app/run.sh"]
