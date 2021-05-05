@@ -4,6 +4,10 @@
 
 SPY
 
+
+QQQ
+
+
 TLT
 
 
