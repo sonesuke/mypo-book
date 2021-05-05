@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>銘柄を選定する &#8212; mypo-book  ドキュメント</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="何がいい感じなのか？" href="05_optimization.html" />
+    <link rel="prev" title="共変性と安定解" href="03_correlation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">mypo-book  ドキュメント</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="ドキュメントを検索..." aria-label="ドキュメントを検索..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../introduction.html">
+   はじめに
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/00_financial-freedom.html">
+   経済的自由を手に入れるには？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/01_first-simulation.html">
+   適当に投資をはじめるとどうなるのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/02_spending.html">
+   どれくらい、お金を増やせばいいのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/03_second-simulation.html">
+   支出を加味したシミュレーション
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/04_income.html">
+   どれくらいお金をもっているのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/05_base-simulation.html">
+   収入を加味したシミュレーション
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/06_distribution.html">
+   その目標を満たすにどう投資すればいいのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/07_distribution-simulation.html">
+   リスク分散を加味したシミュレーション
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/08_rebalance.html">
+   どうやって増やせばいいのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/09_strategy.html">
+   どれだけの金額を、投資に回せばいいのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/10_wrap-up.html">
+   まとめ
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="00_introduction.html">
+   はじめに
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_ticker-basic.html">
+   銘柄を吟味する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_incom-gain-vs-capital-gain.html">
+   インカムゲインとキャピタルゲイン
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_correlation.html">
+   共変性と安定解
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   銘柄を選定する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_optimization.html">
+   何がいい感じなのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_reblance.html">
+   何がいい感じなのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07_tuning.html">
+   チューニング
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_wrap-up.html">
+   まとめ
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/00_introduction.html">
+   はじめに
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/01_logical.html">
+   ぶれないために
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/01_stastics.html">
+   統計について理解する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/02_information.html">
+   情報を吟味する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/03_books.html">
+   情報を吟味する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/04_believe.html">
+   ちゃんと生きるために
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="ナビゲーションを切り替え" aria-controls="site-navigation"
+                title="ナビゲーションを切り替え" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="このページをダウンロード"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/part_2/04_ticker-selection.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="ソースファイルをダウンロード" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="PDFに印刷"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全画面モード"
+        title="全画面モード"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="id1">
+<h1>銘柄を選定する<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>まず、基本的なリスクを除去します。</p>
+<p>簡単にいうと、下記を避けます。</p>
+<p>設定日が新しすぎるもの
+まだ、データが少なく、山のものとも海のものともわかりません。
+よくわからないものには、手を出さない方が懸命です。</p>
+<p>出来高が少ないもの
+あまり、市場で取引されていないものは、売りたい時に売れないリスクもありますし、
+ちょっとした拍子に乱高下しやすいです。</p>
+<p>とは、いっても、これを全ての銘柄から探すの面倒なので、
+そこそこ歴史のあるETFから選びましょう。まずは、10年間運用されているものを選びます。</p>
+<p>次に、現金相当物を、差し引きます。
+これは、簡単にいうと、短期国債です。これらは、事実上、現金相当なので、
+投資対象としては、向かないと考えます。</p>
+<p>では、こうやって選んだものから、相関の低いものを選んでいきましょう。
+何個どうやって選んでいきましょうか？</p>
+<p>さて、ここで選び方は大きく二通りあります。</p>
+<p>一つ目、オーソドックスな分散を選ぶ。
+簡単にいうと、
+株式、債券、コモディティ、不動産から選ぶ。
+これを、世界分散するか、米国中心でいくか、国内中心でいくか。</p>
+<p>もう一つは、他のものが線形結合では、表現できない場合に組み入れていくという方法です。
+これは、少し、説明がめんどうくさいですが、</p>
+<p>例えば、
+A, B, C, Dの4つの銘柄があるとします。</p>
+<p>もし、Cの銘柄の株価が、AとBのブレンドで表されるのであれば、入れない。
+逆に、あらわせられないのならば、入れる。</p>
+<p>という風に、選択していくことです。
+とは、いっても、最初に選ぶものは何か？
+どれぐらい再現できたら、表せたとみなすのか？で、結果は少し変わってきます。
+また、空売りを許すかどうかでもだいぶ変わってきます。</p>
+<p>とりあえず、ここでは、80%再現できてたら、OKで、空売りは許さないという前提で考えています。</p>
+<p>そもそも、どれくらいの数の銘柄を扱えばいいのか？ということに悩むかもしれません。
+これに関しては、トレードオフで、
+簡単に言えば、
+この後に、やる最適化の計算が不安定になったり、遅くなったりするので、あんまり増やしすぎると、大変です。
+また、最後は、それに合わせて運用していかないといけません。その観点でも、少ない方がいいでしょう。</p>
+<p>感覚的ではありますが、3-6ぐらいの間で考えておけばいいのではないでしょうか？</p>
+</div>
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="03_correlation.html" title="previous page">共変性と安定解</a>
+    <a class='right-next' id="next-link" href="05_optimization.html" title="next page">何がいい感じなのか？</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          沿って sonesuke<br/>
+        
+            &copy; 著作権 2021, sonesuke.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

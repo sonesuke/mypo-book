@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>銘柄を吟味する &#8212; mypo-book  ドキュメント</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="インカムゲインとキャピタルゲイン" href="02_incom-gain-vs-capital-gain.html" />
+    <link rel="prev" title="はじめに" href="00_introduction.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">mypo-book  ドキュメント</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="ドキュメントを検索..." aria-label="ドキュメントを検索..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../introduction.html">
+   はじめに
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/00_financial-freedom.html">
+   経済的自由を手に入れるには？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/01_first-simulation.html">
+   適当に投資をはじめるとどうなるのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/02_spending.html">
+   どれくらい、お金を増やせばいいのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/03_second-simulation.html">
+   支出を加味したシミュレーション
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/04_income.html">
+   どれくらいお金をもっているのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/05_base-simulation.html">
+   収入を加味したシミュレーション
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/06_distribution.html">
+   その目標を満たすにどう投資すればいいのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/07_distribution-simulation.html">
+   リスク分散を加味したシミュレーション
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/08_rebalance.html">
+   どうやって増やせばいいのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/09_strategy.html">
+   どれだけの金額を、投資に回せばいいのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_1/10_wrap-up.html">
+   まとめ
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="00_introduction.html">
+   はじめに
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   銘柄を吟味する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_incom-gain-vs-capital-gain.html">
+   インカムゲインとキャピタルゲイン
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_correlation.html">
+   共変性と安定解
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_ticker-selection.html">
+   銘柄を選定する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_optimization.html">
+   何がいい感じなのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_reblance.html">
+   何がいい感じなのか？
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07_tuning.html">
+   チューニング
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_wrap-up.html">
+   まとめ
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/00_introduction.html">
+   はじめに
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/01_logical.html">
+   ぶれないために
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/01_stastics.html">
+   統計について理解する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/02_information.html">
+   情報を吟味する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/03_books.html">
+   情報を吟味する
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../part_3/04_believe.html">
+   ちゃんと生きるために
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="ナビゲーションを切り替え" aria-controls="site-navigation"
+                title="ナビゲーションを切り替え" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="このページをダウンロード"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/part_2/01_ticker-basic.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="ソースファイルをダウンロード" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="PDFに印刷"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全画面モード"
+        title="全画面モード"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="id1">
+<h1>銘柄を吟味する<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>今まで、銘柄については、私がざっくり置いてきましたが、
+もっとちゃんと、銘柄を眺めてみましょう。</p>
+<p>銘柄をながめるときにいくつか大事な数字がありますので、それをこれから紹介していきます。</p>
+<p>日次リターン</p>
+<p>これは、日次のリターンです。
+リターンは、</p>
+<p>今日の終値 - 前日の終値 / 前日の終値</p>
+<p>で、計算していきます。これが、0 % より高ければ、理屈上は、値上がりし続けている銘柄となります。
+また、このリターンの計算をする際に大事になってくるのが、どの期間でやっているかになります。</p>
+<p>この本では一日ごとのリターンで計算しています。
+これを、2日ごとにするには、1日目のリターンと2日目ののリターンを掛け算することで、できます。</p>
+<p>では、これを年利に直すにはどうしましょうか？</p>
+<p>だいたい、ニューヨーク証券取引所が開いているが、一年に267日なので、
+267乗すれば、年利に直すことができます。</p>
+<p>Excelや、Google spreadsheet、高性能な電卓ですぐに計算することができるので、
+覚えておきましょう。</p>
+<p>日次リターンの形</p>
+<p>さて、先程の日次リターン。
+ふらふらしています。
+そのふらふらをプロットするとこういう感じになります。
+縦軸が、個数。横軸が、日次リターンです。</p>
+<p>これは、S&amp;P500のの日次リターンの分布をプロットしたものです。
+こちらは、TLTの分布をプロットしたもの。</p>
+<p>だいぶ雰囲気が違いますね。</p>
+<p>分散</p>
+<p>さきほどの分布は、幅が広い方がいいのでしょうか？狭い方がいいのでしょうか？</p>
+<p>理想は、日次リターンの中央値が高いところにあって、振れ幅が、ほとんどないことでしょう。
+つまり、ほとんど、損する要素がない美味しい投資だということを意味します。</p>
+<p>先程の分布の形で、振れ幅に相当する部分を分散といいます。</p>
+<p>詳しい計算方法は、下記ですが、</p>
+<p>Google Spreadsheet
+EXCEL</p>
+<p>だと、こうやって計算できます。
+電卓だと流石に、計算するのは大変です。</p>
+<p>出来高</p>
+<p>出来高というのは、その日に取引された株の枚数です。
+これは、高い方がいいのでしょうか？少ない方がいいのでしょうか？</p>
+<p>少ないということは何を意味するのでしょうか？</p>
+<p>売り買いしている人が少ないということを意味します。</p>
+<p>これからは、思った値段で売り買いできないというリスクになります。</p>
+<p>ただ、ここで紹介しているようなETFを対象にしていれば、だいたい大丈夫です。</p>
+<p>時価総額</p>
+<p>時価総額。これも、一応チェックしておきましょう。
+これが大きいということは、それだけ多くのお金を集めていることになります。</p>
+<p>より、多くお金を集めている銘柄の方が、安心です。ETFの場合は。</p>
+<p>設定日</p>
+<p>これは、古い方がいいとか、新しい方がいいという話というよりは、
+ま、そこまでのデータしかないということを意味します。</p>
+<p>また、あまりにあたらすぎると、単純にその銘柄に、関する情報が不足しすぎて、安定しません。</p>
+<p>MAXドローダウン</p>
+<p>かつての最高値から、どれくらい落ちることがあるか？という指標になります。
+これくらいは、過去落ちたことがあると・・・きちんと認識しておくことが、
+実際に落ちた時に、焦らなくてすみます。</p>
+<p>ドローダウン期間</p>
+<p>これは、最高値を更新するために必要な期間です。
+長ければ、長いほど、なんか、下がったなと思っている期間が長いということになります。
+これも、精神衛生上よくないので、短ければ、短いほどよいです。</p>
+</div>
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="00_introduction.html" title="previous page">はじめに</a>
+    <a class='right-next' id="next-link" href="02_incom-gain-vs-capital-gain.html" title="next page">インカムゲインとキャピタルゲイン</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          沿って sonesuke<br/>
+        
+            &copy; 著作権 2021, sonesuke.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
