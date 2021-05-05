@@ -1,3 +1,3 @@
 # mypo-book
 
-Documentation: https://sonesuke.github.io/mypo-book/introduction
+Documentation: https://sonesuke.github.io/mypo-book/introduction.html
